@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>RedeemlessKills' Podcast</title>
+    <link>https://redeemlesskills.tk</link>
+    <description>A stupid podcast for intellegently dumb people</description>
+    <languge>en-US</languge>
+    <image>
+      <title>RedeemlessKills' Podcast</title>
+      <link>https://redeemlesskills.tk</link>
+      <url>https://redeemlesskills.tk/icons/master.png</url>
+      <width>800</width>
+      <height>800</height>
+    </image>
+  </channel>
+</rss>
