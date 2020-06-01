@@ -2,449 +2,156 @@
 <html lang="en">
 
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PFBPX8S');</script>
-<!-- End Google Tag Manager -->
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147211792-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+    <meta charset="UTF-8">
+    <title>RedeemlessKills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="RedeemlessKills">
+    <meta property="og:site_name" content="RedeemlessKills">
+    <meta property="og:type" content="profile">
+    <meta property="og:image" content="me.png">
+    <meta name="theme-color" content="#5cb6ff">
+    <style>
+        header {
+          background: rgb(159, 159, 255);
+          background: linear-gradient(
+            90deg,
+            rgba(159, 159, 255, 1) 0%,
+            rgba(0, 212, 255, 1) 100%
+          );
+          background-size: 100vw;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          height: 20rem;
+          max-height: 80vh;
+          color: #ffffff;
+          text-shadow: 0 1px 2px #0000007a;
+          box-shadow: 0 -20px 7px 20px #0e0327c7;
+          position: relative;
+        }
 
-gtag('config', 'UA-147211792-1');
-</script>
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-var OneSignal = window.OneSignal || [];
-OneSignal.push(function() {
-    OneSignal.init({
-      appId: "bec9e216-7808-4628-8558-ca9080b7b5b5",
-      });
-    });
-</script>
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        body,
+        html {
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          max-height: 100%;
+          font-family: system-ui, sans-serif;
+        }
 
-   ym(56573413, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/56573413" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5deaf3f8d96992700fcb291f/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-  <link href="icons/favicon.png" rel="icon">
-  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-touch-icon@1x-57.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-touch-icon@1x-72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-touch-icon@1x-76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-touch-icon@2x-114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-touch-icon@2x-120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-touch-icon@2x-144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-touch-icon@2x-152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon@2x-180.png">
-  <title>RedeemlessKills.tk | Under Construction</title>
-  <meta name=”description” content=”RedeemlessKills Personal Website! Here I will have cool stuff, like wallpapers, games, tutorials, and some downloads. Be sure to check it out for some awesome stuff!”>
+        header > img {
+          filter: drop-shadow(0 2px 3px #000000b8);
+          object-fit: scale-down;
+          position: absolute;
+          top: 0;
+        }
 
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <link rel=”canonical” href=”http://www.redeemlesskills.tk/” />
-  <link rel=”canonical” href=”https://www.redeemlesskills.tk/” />
-  <link rel=”canonical” href=”http://redeemlesskills.tk/” />
-  <meta name=”robots” content=”index, nofollow”>
+        header h1 {
+          margin: 0;
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+        }
 
-  <title>Stylish Portfolio - Start Bootstrap Template</title>
+        header nav {
+          width: 100%;
+          background-color: #ffffff36;
+          border: 1px solid #ffffff7a;
+          border-style: solid none;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        header nav ul {
+          display: flex;
+          margin: 0;
+          justify-content: space-evenly;
+          width: 100%;
+          padding: 0;
+        }
 
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+        nav ul li {
+          border: 2px solid white;
+          display: inline-flex;
+          max-width: 10rem;
+          flex-grow: 1;
+          border-radius: 5px;
+          background: #3f8ec554;
+          color: #fff;
+          margin: 0.5rem;
+          height: 2rem;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 1px 2px #00000057;
+        }
 
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+        nav ul li a {
+          color: inherit;
+          text-decoration: inherit;
+          margin: 0;
+          padding: 0;
+          transform: translateY(-0.1em);
+          width: 100%;
+        }
 
+        article {
+          box-shadow: 0 1px 3px #0000009e;
+          margin: 1rem;
+          padding: 0.8rem;
+          border-radius: 1rem;
+        }
 
+        article > * {
+          margin: 0 0 0.5rem;
+        }
 
-  <!-- Facebook Pixel Code -->
-  <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1067628460234883');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1067628460234883&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
+        article > *:last-child {
+          margin: 0 0 0;
+        }
+        footer {
+          text-align: center;
+          background-color: #333;
+          color: #FFF;
+        }
+    </style>
 </head>
 
-<body id="page-top">
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFBPX8S"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-  <!-- Navigation -->
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
-  </a>
-  <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-      <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Start Bootstrap</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#page-top">Home</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">About</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-      </li>
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mb-1">Stylish Portfolio</h1>
-      <h3 class="mb-5">
-        <em>A Free Bootstrap Theme by Start Bootstrap</em>
-      </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
-    </div>
-    <div class="overlay"></div>
-  </header>
-
-  <!-- About -->
-  <section class="content-section bg-light" id="about">
-    <div class="container text-center">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
-          <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
-            <a href="https://unsplash.com/">Unsplash</a>!</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services -->
-  <section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-      <div class="content-section-heading">
-        <h3 class="text-secondary mb-0">Services</h3>
-        <h2 class="mb-5">What We Offer</h2>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-screen-smartphone"></i>
-          </span>
-          <h4>
-            <strong>Responsive</strong>
-          </h4>
-          <p class="text-faded mb-0">Looks great on any screen size!</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-pencil"></i>
-          </span>
-          <h4>
-            <strong>Redesigned</strong>
-          </h4>
-          <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
-        </div>
-        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-like"></i>
-          </span>
-          <h4>
-            <strong>Favorited</strong>
-          </h4>
-          <p class="text-faded mb-0">Millions of users
-            <i class="fas fa-heart"></i>
-            Start Bootstrap!</p>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-            <i class="icon-mustache"></i>
-          </span>
-          <h4>
-            <strong>Question</strong>
-          </h4>
-          <p class="text-faded mb-0">I mustache you a question...</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Callout -->
-  <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
-    </div>
-  </section>
-
-  <!-- Portfolio -->
-  <section class="content-section" id="portfolio">
-    <div class="container">
-      <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5">Recent Projects</h2>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Stationary</h2>
-                <p class="mb-0">A yellow pencil with envelopes on a clean, blue backdrop!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
-            <span class="caption">
-              <span class="caption-content">
-                <h2>Workspace</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
-              </span>
-            </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white" id="contact">
-    <div class="container text-center">
-      <h2 class="mb-4">Contact Me</h2>
-    <p class="mb-0" style="color:white;">Phone: +1 (213) 538-8807</p>
-    <p class="mb-0" style="color:white;">Email: me@redeemlesskills.tk</p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer text-center">
-    <div class="container">
-      <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-facebook"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-twitter"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#">
-            <i class="icon-social-github"></i>
-          </a>
-        </li>
-      </ul>
-      <p class="text-muted small mb-0">Copyright &copy; RedeemlessKills <script>document.write(new Date().getFullYear())</script></p>
-    </div>
-  </footer>
-
-<!--  Scroll to Top Button
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-  </a>
--->
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.min.js"></script>
-
-  <!-- Main Javascript File -->
-
-<style>
-  .qc-cmp-button.qc-cmp-secondary-button {
-    border-color: #eee !important;
-    background-color: #eee !important;
-  }
-</style>
-  <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5daa25352e7082d4"></script>
-  <script type="text/javascript">
-var _userway_config = {
-account: 'NGl9phZ78W'
-};
-</script>
-<script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
-<!-- Quantcast Choice. Consent Manager Tag -->
-<script type="text/javascript" async=true>
-var elem = document.createElement('script');
-elem.src = 'https://quantcast.mgr.consensu.org/cmp.js';
-elem.async = true;
-elem.type = "text/javascript";
-var scpt = document.getElementsByTagName('script')[0];
-scpt.parentNode.insertBefore(elem, scpt);
-(function() {
-var gdprAppliesGlobally = true;
-function addFrame() {
-  if (!window.frames['__cmpLocator']) {
-  if (document.body) {
-      var body = document.body,
-          iframe = document.createElement('iframe');
-      iframe.style = 'display:none';
-      iframe.name = '__cmpLocator';
-      body.appendChild(iframe);
-  } else {
-      // In the case where this stub is located in the head,
-      // this allows us to inject the iframe more quickly than
-      // relying on DOMContentLoaded or other events.
-      setTimeout(addFrame, 5);
-  }
-  }
-}
-addFrame();
-function cmpMsgHandler(event) {
-  var msgIsString = typeof event.data === "string";
-  var json;
-  if(msgIsString) {
-  json = event.data.indexOf("__cmpCall") != -1 ? JSON.parse(event.data) : {};
-  } else {
-  json = event.data;
-  }
-  if (json.__cmpCall) {
-  var i = json.__cmpCall;
-  window.__cmp(i.command, i.parameter, function(retValue, success) {
-      var returnMsg = {"__cmpReturn": {
-      "returnValue": retValue,
-      "success": success,
-      "callId": i.callId
-      }};
-      event.source.postMessage(msgIsString ?
-      JSON.stringify(returnMsg) : returnMsg, '*');
-  });
-  }
-}
-window.__cmp = function (c) {
-  var b = arguments;
-  if (!b.length) {
-  return __cmp.a;
-  }
-  else if (b[0] === 'ping') {
-  b[2]({"gdprAppliesGlobally": gdprAppliesGlobally,
-      "cmpLoaded": false}, true);
-  } else if (c == '__cmp')
-  return false;
-  else {
-  if (typeof __cmp.a === 'undefined') {
-      __cmp.a = [];
-  }
-  __cmp.a.push([].slice.apply(b));
-  }
-}
-window.__cmp.gdprAppliesGlobally = gdprAppliesGlobally;
-window.__cmp.msgHandler = cmpMsgHandler;
-if (window.addEventListener) {
-  window.addEventListener('message', cmpMsgHandler, false);
-}
-else {
-  window.attachEvent('onmessage', cmpMsgHandler);
-}
-})();
-window.__cmp('init', {
-  'Language': 'en',
-'Initial Screen Reject Button Text': 'I DO NOT ACCEPT',
-'Initial Screen Accept Button Text': 'I ACCEPT',
-'Purpose Screen Body Text': 'You can set your consent preferences and determine how you want your data to be used based on the purposes below. You may set your preferences for us independently from those of third-party partners. Each purpose has a description so that you know how we and partners use your data.',
-'Purpose Screen Vendor Link Text': 'See Vendors',
-'Purpose Screen Save and Exit Button Text': 'SAVE &amp; EXIT',
-'Vendor Screen Body Text': 'You can set consent preferences for individual third-party partners we work with below. Expand each company list item to see what purposes they use data for to help make your choices. In some cases, companies may use your data without asking for your consent, based on their legitimate interests. You can click on their privacy policy links for more information and to object to such processing. ',
-'Vendor Screen Accept All Button Text': 'ACCEPT ALL',
-'Vendor Screen Reject All Button Text': 'REJECT ALL',
-'Vendor Screen Purposes Link Text': 'Back to Purposes',
-'Vendor Screen Save and Exit Button Text': 'SAVE &amp; EXIT',
-'Initial Screen Body Text': 'We and our partners use technologies, such as cookies, and process personal data, such as IP addresses and cookie identifiers, to personalise ads and content based on your interests, measure the performance of ads and content, and derive insights about the audiences who saw ads and content. Click below to consent to the use of this technology and the processing of your personal data for these purposes. You can change your mind and change your consent choices at any time by returning to this site. ',
-'Initial Screen Body Text Option': 1,
-'Publisher Name': 'RedeemlessKills',
-'Publisher Logo': 'https://redeemlesskills.tk/icons/master.png',
-'Display UI': 'always',
-'Min Days Between UI Displays': 180,
-'Publisher Purpose IDs': [1,3,5],
-'Publisher Purpose Legitimate Interest IDs': [1,5],
-'No Option': false,
-});
-</script>
-<!-- End Quantcast Choice. Consent Manager Tag -->
+<body>
+    <header>
+        <img src="me.png" width="70%" height ="70%" alt="My Memoji">
+        <h1>RedeemlessKills</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#about">About Me</a>
+                </li>
+                <li>
+                    <a href="#projects">My Projects</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article id="about">
+        <h2>About Me</h2>
+        <p>Nobis reprehenderit quibusdam ut. Qui aut aut debitis alias voluptatem. Aperiam et distinctio quasi vitae et id. Molestias sequi et totam illum consequatur. Delectus ut aut sunt suscipit inventore aut deserunt. Atque sed et et ullam nihil. Temporibus accusantium et temporibus et ut quia expedita sint. Distinctio iusto aliquam totam sequi.</p>
+        <p>Corrupti et magni perspiciatis necessitatibus cum est. Hic et in et et aperiam vero qui. Amet iusto ad repellat repellat qui cumque. Id nobis magni id.</p>
+        <p>Quod libero eum dolor corrupti at nisi ut pariatur. Architecto beatae nihil dolores. Suscipit recusandae fuga aut quia cum officiis.Amet fugit doloremque repellendus porro iste. Soluta quo labore amet iste sunt optio voluptatibus. Enim aut veniam quia accusantium. Sunt quisquam qui quasi. Possimus mollitia sint ut tenetur consequuntur vero. Repudiandae qui sunt sit provident vel aliquam suscipit.</p>
+    </article>
+    <article id="projects">
+        <h2>My Projects</h2>
+        <p>Nobis reprehenderit quibusdam ut. Qui aut aut debitis alias voluptatem. Aperiam et distinctio quasi vitae et id. Molestias sequi et totam illum consequatur. Delectus ut aut sunt suscipit inventore aut deserunt. Atque sed et et ullam nihil. Temporibus accusantium et temporibus et ut quia expedita sint. Distinctio iusto aliquam totam sequi.</p>
+        <p>Corrupti et magni perspiciatis necessitatibus cum est. Hic et in et et aperiam vero qui. Amet iusto ad repellat repellat qui cumque. Id nobis magni id.</p>
+        <p>Quod libero eum dolor corrupti at nisi ut pariatur. Architecto beatae nihil dolores. Suscipit recusandae fuga aut quia cum officiis.Amet fugit doloremque repellendus porro iste. Soluta quo labore amet iste sunt optio voluptatibus. Enim aut veniam quia accusantium. Sunt quisquam qui quasi. Possimus mollitia sint ut tenetur consequuntur vero. Repudiandae qui sunt sit provident vel aliquam suscipit.</p>
+    </article>
+    <footer>
+      <center>
+        <strong>Website by <a href="https://github.com/easrng" style="color: #FFF;">easrng</a> on Github &copy; 2020</strong>
+      </center>
+    </footer>
 </body>
 
 </html>
