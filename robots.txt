@@ -1,6 +1,2 @@
 User-agent: *
-Allow: /sitemap.xml
 Allow: /
-Disallow: *.md
-
-Sitemap: /sitemap.xml
